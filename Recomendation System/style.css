@@ -1,0 +1,63 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #ffecd2, #fcb69f);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  padding: 30px 40px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 1s ease-in-out;
+}
+
+h1 {
+  color: #ff6f61;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.buttons button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  margin: 10px;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.buttons button:hover {
+  background-color: #45a049;
+}
+
+#recommendation-box {
+  margin-top: 30px;
+  display: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  color: #333;
+  font-size: 17px;
+  text-align: left;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
